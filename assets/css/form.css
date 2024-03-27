@@ -1,0 +1,48 @@
+.form_container{
+  border-left: 1px solid #000;
+  
+}
+.form_container h2 {
+text-align: center;
+}
+ul{
+  list-style: none;
+    margin-top: 20px;
+}
+.blogitemLi {
+    list-style: none;
+    margin-top: 20px;
+    display: block;
+    border: 1px solid black;
+  }
+
+
+  
+  .submitBtn {
+    background-color: #000;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    width: 95%;
+    text-align: center;
+    margin-left: 30px ;
+  }
+  
+  input {
+    font-size: 30px;
+    width: 100%;
+    margin-top: 10px;
+    background-color: #fff;
+  }
+#msg {
+    display: block;
+    min-height: 100px;
+    width: 100%;
+    margin-top: 10px;
+    background-color: #fff;
+  }
+
+  .errorMessages {
+    color: red;
+    margin-top: 5px;
+  }
