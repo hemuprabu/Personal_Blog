@@ -5,9 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/blog.css">
+    <link rel="stylesheet" href="./assets/css/form.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <div class="container" id="themechanger">
+        <header class="header_container container-fluid" id="header_container">
+            
+            <div class="row" >
+                
+                <div class="col-lg-12">
+                    
+                    <p id="mode">🌞</p>
+                </div>
+            </div>
+            
+        </header>
+        <div class="blog_container container" id="blog_container">
+            <div class="row">
+                <div class=" col-lg-6 col-md-6 col-sm-12 blog_circle_container" id="blog_circle_container">
+                    <div class="blog_circle">
+                        <h2>My First Blog</h2>
+                    </div>
+                </div>
+                <div class=" col-lg-6 col-md-6 col-sm-12 form_container" id="form_container">
+                    <h2>What's on your Mind?</h2>
+                    <form id="myForm">
+                    <ul>
+                        <li>
+                        <label for="usernameInput">Username</label>
+                        <input type="text" class="form-control" id="usernameInput" onkeyup="validateInputs()"
+                        >
+                        <div class="errorMessages"></div>
+                        </li>
+                        <li>
+                        <label for="titleInput">Title</label>
+                        <input type="text" class="form-control" id="titleInput"  onkeyup="validateTitle()">
+                        <div class="errorMessages"></div>
+                    </li>
+                        <li>
+                        <label for="CmmtInput">Comment</label>
+                        <textarea class="form-control" id="CmmtInput" rows="3"  onkeyup="validateComment()"></textarea>
+                        <div class="errorMessages"></div>
+                        </li>
+                    </ul>
+                    <button class="submitBtn" id="submit">Submit</button>
+                    </form> 
+                </div>
+            </div>   
+        </div>
+    </div>
+
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./assets/js/form.js"></script>
+    <script src="./assets/js/logic.js"></script>
 </body>
 </html>
