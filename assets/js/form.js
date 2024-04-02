@@ -90,6 +90,6 @@ function saveBlogData() {
       localStorage.setItem('previous', currentUrl);
       
       localStorage.setItem('blogData', JSON.stringify(arrData));
-      window.location.href = base_url+'../Personal_Blog/blog.html';
+      window.location.href = base_url+'./Personal_Blog/blog.html';
     }
       
